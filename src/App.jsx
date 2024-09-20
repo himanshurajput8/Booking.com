@@ -4,6 +4,7 @@ import { HeaderComponent } from './Header'
 import { CarouselComponent } from './Carosuel'
 import { DestinationImage } from './Destination'
 import { PropertyImage } from './Property'
+import { WeekendImage } from './Weekend'
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
       <CarouselComponent/>
       <DestinationImage/>
       <PropertyImage/>
+      <WeekendImage/> 
     </>
   )
 }

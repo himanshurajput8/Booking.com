@@ -136,14 +136,14 @@ nav ul li:first-child{
 .destination-container h1,p{
     margin-left: 14vw;    
 }
-.destination-container h1, .property-container h1{
+.destination-container h1, .property-container h1, .weekend-container h1{
     font-weight: bold;
     margin-bottom: 12px;    
 }
 .property-container{
     margin-top: 5vh;
 }
-.property-container h1{
+.property-container h1, .weekend-container h1{
     margin-left: 14vw;
 }
 .destination-container p{
@@ -167,3 +167,9 @@ nav ul li:first-child{
     border-radius: 5px;
 }
 
+.weekend-image-container{
+    display: grid;   
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 12% 0px 12%;
+    
+} 
