@@ -172,7 +172,7 @@ nav ul li:first-child{
     padding: 0px 12% 0px 12%;
     
 } 
-@media screen and (max-width:400px) {
+@media only screen and (max-width: 600px)  {
    header .right-div span{
     display: none;   
    }
