@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function HeaderComponent(){
     const rightOptions = [
         { type: 'text', content: 'INR' },
@@ -14,6 +16,12 @@ export function HeaderComponent(){
         { name: 'Attractions', icon: '' },
         { name: 'Airport taxis', icon: '' }
     ];
+    const[inputValue, setInputValue] = useState('')
+
+    const handleSearch = (event) => {
+        setInputValue(event.target.value)
+        setSearchTerm(event.target.value)
+    }
     return(
        <>
          <div className="header-container">
@@ -46,7 +54,7 @@ export function HeaderComponent(){
             <h1>Find your next stay</h1>
             <p>Search low prices on hotels, homes and much more...</p> 
             <div className="searchbar-div">
-                <input type="text" placeholder="Where are you going"/>
+                <input type="search" placeholder="Where are you going" value={inputValue} onChange={handleSearch}/>
                 <input type="date" placeholder="Check-in date - Check-out date"/>
                 <input type="text" placeholder="adult . children . room"/>
                 <button>Search</button>

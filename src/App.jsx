@@ -5,17 +5,21 @@ import { CarouselComponent } from './Carosuel'
 import { DestinationImage } from './Destination'
 import { PropertyImage } from './Property'
 import { WeekendImage } from './Weekend'
+import { DestinationList } from './destinationList'
+import { FooterComponent } from './Footer'
 
 function App() {
- 
-
+ const[searchTerm, setSearchTerm] = useState('')
+  
   return (
     <>
-      <HeaderComponent/>
+      <HeaderComponent setSearchTerm={setSearchTerm}/>
       <CarouselComponent/>
       <DestinationImage/>
       <PropertyImage/>
-      <WeekendImage/> 
+      <WeekendImage searchTerm={searchTerm}/> 
+      <DestinationList/>
+      <FooterComponent/>
     </>
   )
 }
