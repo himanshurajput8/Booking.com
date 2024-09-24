@@ -190,9 +190,12 @@ nav ul li:first-child{
     display: grid;   
     grid-template-columns: repeat(4, 1fr);
     padding: 0px 12% 0px 12%;    
+  
+   
 } 
 .weekend-image-div{
     line-height: 35px;
+    place-self: center;
 }
 .weekend-image-div img{
     border-radius: 5px;
@@ -330,7 +333,8 @@ nav ul li:first-child{
         flex-direction: column; 
     }
     .weekend-image-container{      
-        grid-template-columns: repeat(1, 1fr);      
+        grid-template-columns: repeat(1, 1fr); 
+      
         
     }    
     .footer-container{        
@@ -345,6 +349,9 @@ nav ul li:first-child{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 5%;
+    }
+    .destinatio-list-heading, .destination-list-div{
+        display: none;
     }
 }
 
