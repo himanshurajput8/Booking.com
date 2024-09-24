@@ -10,7 +10,7 @@ export function DestinationImage(){
         <>
            <div className="destination-container">
            <h1>Explore india</h1>
-           <p>These popular destinations have a lot to offer</p>
+           <h4>These popular destinations have a lot to offer</h4>
            <div className="destination-image-container">
            {Destinationdata.map(function(item, index) {
                     return (
@@ -23,4 +23,4 @@ export function DestinationImage(){
            </div>
         </>
     )
-}
+} 

@@ -44,29 +44,47 @@ export function WeekendImage({searchTerm}){
         {id:8, imageUrl: 'https://r-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=',title: '7Seasons Apartments Budapest', location:'06 Terezvaros, Hungary, Budapest', reviewPoint: '8.8', review: 'Fabulous 11,506 reviews'},
         
     ] 
+    const [selectedImage, setSelectedImage] = useState(null);
+    const handleImageClick = (image) => {
+        console.log(image)
+        setSelectedImage(image)
+}
+
     const filteredData = weekendData.filter((item ) =>
         item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.location.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+    ) 
     return(
         <>
            <div className="weekend-container">
-                <h1>Deals for the weekend</h1>
-                <div className="weekend-image-container">
-                    
+               <h1>Deals for the weekend</h1>
+                {!selectedImage && (
+                    <div className="weekend-image-container">                     
                     {filteredData.map(function(item) {
                         return (
-                            <div className="weekend-image-div">
+                            <div className="weekend-image-div" onClick={() => handleImageClick(item)}>
                                 <img key={item.id} src={item.imageUrl} alt="weekend image" />
                                 <h3>{item.title}</h3>
                                 <h6>{item.location}</h6>
-                                <h5>{item.review}</h5>
-                                <p>{item.reviewPoint}</p>                             
+                                <h5>{item.review}</h5>                                                        
                             </div>
                     )
                      })}
                 </div>
+                )}
+                     {selectedImage && (
+                        <div className="selected-image-container">
+                            <img src={selectedImage.imageUrl} alt={selectedImage.title} /> 
+                            <div>
+                                <h3>{selectedImage.title}</h3>
+                                <h5>{selectedImage.location}</h5>
+                                <h6>{selectedImage.review}</h6>
+                                <p>you'll be astonished by the beauty that remains. You can see ballet in the Drechsler Palace, climb to the citadel on Gellért Hill, or see how the Imperial royal family lived at Buda Castle</p>
+                                <button onClick={()=> setSelectedImage(null)}>close</button>
+                            </div>
+                        </div> 
+                     )}                     
            </div>
         </>
     )
-}   
+}       

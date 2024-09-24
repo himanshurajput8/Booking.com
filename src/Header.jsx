@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
-export function HeaderComponent(){
+export function HeaderComponent({setSearchTerm}){
     const rightOptions = [
         { type: 'text', content: 'INR' },
         { type: 'icon', content: 'fa-solid fa-question' },
@@ -16,11 +17,13 @@ export function HeaderComponent(){
         { name: 'Attractions', icon: '' },
         { name: 'Airport taxis', icon: '' }
     ];
-    const[inputValue, setInputValue] = useState('')
+    const[inputValue, setInputValue] = useState('') 
+    const[searchParam, setSearchParam] = useSearchParams()
 
     const handleSearch = (event) => {
         setInputValue(event.target.value)
         setSearchTerm(event.target.value)
+        setSearchParam({q:event.target.value})
     }
     return(
        <>

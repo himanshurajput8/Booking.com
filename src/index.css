@@ -68,6 +68,7 @@ nav ul li:first-child{
     margin-top: 1vh;
     color: white;
     padding-left: 14vw;
+    
 }
 /* searchbar-div code */
 .searchbar-div{
@@ -84,10 +85,11 @@ nav ul li:first-child{
     width: 23vw;
     height: 7vh;
     border: none;
+    outline: none;
     margin: 2px;
     border-radius: 5px;
     font-weight: bold;
-    padding: 15px;
+    padding: 15px; 
 }
 .searchbar-div button{  
     width: 15vh;
@@ -128,11 +130,22 @@ nav ul li:first-child{
     border: 1px solid #ccc;
     line-height: 35px;
 }
+.carosuel-left-div button{
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #006ce4;
+    color: white;
+    font-weight: bold;  
+     
+}
 .carosuel-left-div img{
     width: 10vw;
     
 }
-.destination-container h1,p{
+/* --- */
+.destination-container h1,h4{ 
     margin-left: 14vw;    
 }
 .destination-container h1, .property-container h1, .weekend-container h1{
@@ -170,7 +183,9 @@ nav ul li:first-child{
 .destination-image-div img{
     border-radius: 5px;
 }
-
+.weekend-container{
+    margin-top: 5vh;
+}
 .weekend-image-container{
     display: grid;   
     grid-template-columns: repeat(4, 1fr);
@@ -178,6 +193,32 @@ nav ul li:first-child{
 } 
 .weekend-image-div{
     line-height: 35px;
+}
+.weekend-image-div img{
+    border-radius: 5px;
+}
+.selected-image-container{
+    width: 100%;    
+    display: flex;
+    padding-left: 14vw;  
+    gap: 5vw;
+    line-height: 5vh;     
+}
+.selected-image-container img{
+    border-radius: 5px;
+    width: 30vw;
+}
+.selected-image-container button{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #006ce4;
+    color: white;
+    font-weight: bold; 
+}
+.selected-image-container p{
+    width: 50%;
 }
 .destination-list-div{
     display: grid;
@@ -209,6 +250,18 @@ nav ul li:first-child{
     list-style-type: none;
     line-height: 35px;
 }
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;     
+}
+.page-not-found-container img{
+    width: 100%; 
+    height: 100vh;
+}
+
 @media only screen and (max-width: 600px)  {
    header .right-div span{
     display: none;   
@@ -294,3 +347,4 @@ nav ul li:first-child{
         padding: 5%;
     }
 }
+
