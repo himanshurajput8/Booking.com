@@ -1,11 +1,11 @@
 export function DestinationList(){
     return(
         <>
-            <h2 className="destinatio-list-heading">Destinations we love</h2>
+            <h2 className="destinatio-list-heading">Destinations we love ❤️</h2>
             <div className="destination-list-div">
                 <div>
                     <ul>
-                        <li>Uttar Pradesh</li>
+                        <li>Uttar Pradesh</li> 
                         <li>4,463 properties</li>
                         <li>Guernsey</li>
                         <li>64 properties</li>
