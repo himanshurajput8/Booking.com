@@ -55,12 +55,12 @@ export function DestinationList(){
                 <ul>
                         <li>Cornwall</li>
                         <li>5,459 properties</li>
-                        <li>England</li>
-                        <li>80,602 properties</li>
-                        <li> Zanibar</li>
-                        <li>882 properties</li>
-                        <li>Phuket Province</li>
-                        <li>5,547 properties</li>                   
+                        <li> England</li>
+                        <li> 80,602 properties</li>
+                        <li>Zanibar</li>
+                        <li> 882 properties</li>
+                        <li> Phuket Province</li>
+                        <li> 5,547 properties</li>                   
                     </ul>
                 </div>
             </div>
