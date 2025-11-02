@@ -63,7 +63,7 @@ export function DestinationList(){
                         <li>5,547 properties</li>                   
                     </ul>
                 </div>
-            </div>
+            </div> 
         </>
     )  
 }
