@@ -14,10 +14,10 @@ export function FooterComponent(){
             <div>
                 <h2>Discover</h2>
                 <ul>
-                    <li> Genius loyalty programme</li>
-                    <li> Seasonal and holiday deals</li>
-                    <li> Travel articles</li>
-                    <li> Booking.com for Business</li>
+                    <li>Genius loyalty programme</li>
+                    <li>Seasonal and holiday deals</li>   
+                    <li>Travel articles</li>
+                    <li>Booking.com for Business</li>
                     <li>Traveller Review Awards</li>                   
                     <li>Flight finder</li>
                     <li>Restaurant reservations</li>                  
