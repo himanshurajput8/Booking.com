@@ -48,9 +48,9 @@ export function FooterComponent(){
                 <ul>
                     <li>About Booking.com</li>
                     <li> How we work</li>
-                    <li> Sustainability</li>
-                    <li> Press centre</li>
-                    <li>  Careers</li>
+                    <li>Sustainability</li>
+                    <li>Press centre</li>
+                    <li>Careers</li>
                     <li> Investor relations</li>
                     <li> Corporate contact</li> 
                 </ul>
