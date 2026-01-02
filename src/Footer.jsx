@@ -46,9 +46,9 @@ export function FooterComponent(){
             <div>
                 <h2>About</h2>
                 <ul>
-                    <li>About Booking.com</li>
-                    <li>How we work</li>
-                    <li>Sustainability</li>
+                    <li> About Booking.com</li>
+                    <li> How we work</li>
+                    <li> Sustainability</li>
                     <li>Press centre</li>
                     <li> Careers</li>
                     <li> Investor relations</li>
