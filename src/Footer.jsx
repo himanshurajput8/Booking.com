@@ -51,8 +51,8 @@ export function FooterComponent(){
                     <li> Sustainability</li>
                     <li> Press centre</li>
                     <li> Careers</li>
-                    <li>Investor relations</li>
-                    <li>Corporate contact</li> 
+                    <li> Investor relations</li>
+                    <li> Corporate contact</li> 
                 </ul>
             </div> 
         </div> 
